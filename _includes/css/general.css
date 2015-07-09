@@ -85,7 +85,7 @@ h2 {
   font-weight: 400;
   font-size: 0.84em;
   margin: 0;
-  color: #7F2123;
+  color: #064571;
   text-transform: uppercase;
   line-height: initial;
   letter-spacing: 0.5px;
@@ -99,7 +99,7 @@ font-family: 'Lato', sans-serif;
 text-transform: uppercase;
 font-size: 1.5em;
 margin: 0;
-color: #C05E2F;
+color: #075A94;
 }
 
 .body {
@@ -123,13 +123,13 @@ margin: 0;
 }
 
 .body-link {
-color: #7F2123;
+color: #064571;
 text-decoration: none;
 transition: all 0.8s linear;
 }
 
 .body-link:hover {
-color: #C05E2F;
+color: #075A94;
 }
 
 .mob-link {
@@ -175,7 +175,7 @@ blockquote {
 }
 
 .content tr {
-  border-bottom: 1px solid #7F2123;
+  border-bottom: 1px solid #064571;
 }
 
 th {
@@ -185,7 +185,7 @@ th {
 .date-title {
   display: block;
   padding: 0.5em;
-  background-color: #7F2123;
+  background-color: #064571;
   color: #FFF;
 }
 
@@ -207,12 +207,12 @@ th {
 	text-align: right;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #C05E2F;
+	color: #075A94;
 	transition: all 0.8s ease;
 }
 
 .top:hover {
-	color: #7F2123;
+	color: #064571;
 }
 
 .top:before {
@@ -230,7 +230,7 @@ h1 {
 	padding: 0.5em 0.5em 1em;
     font-size: 1.25em!important;
 	margin: 0!important;
-	color: #7F2123;
+	color: #064571;
 }
 
 .subhead {
@@ -240,7 +240,7 @@ h1 {
   padding: 0 1em 1em;
   font-size: 1em!important;
   margin: 0;
-  color: #C05E2F;
+  color: #075A94;
   letter-spacing: 4px;
 }
 
@@ -253,7 +253,7 @@ h1 {
 .bg-link {
 	border: 1px solid;
 	padding: 0.5em;
-	color: #C05E2F;
+	color: #075A94;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
@@ -265,14 +265,14 @@ h1 {
 }
 
 .bg-link:hover {
-	background-color: #7F2123;
-	border: 1px solid #7F2123;
+	background-color: #064571;
+	border: 1px solid #064571;
 	color: #FFF;
 }
 
 .dot {
 	display: none;
-	color: #C05E2F;
+	color: #075A94;
 	font-size: 2em;
 	vertical-align: middle;
 	margin: 0;
@@ -301,7 +301,7 @@ nav#slide-menu {
 	width: 100%;
 	max-width: 141px;
 	height: 100%;
-	  background-color: #C05E2F;
+	  background-color: #075A94;
 	overflow-x: hidden;
 overflow-y: scroll;
   z-index: 99999;
@@ -394,7 +394,7 @@ transition: all 300ms;
 			display: inline-block;
 			width: 36px;
 			height: 36px;
-			color: #7F2123;
+			color: #064571;
 			font-family: "icomoon";
 			font-style: normal;
 			font-size: 1.2em;
@@ -413,7 +413,7 @@ transition: all 300ms;
 		}
 
 		.menu-trigger:hover:before { 
-			color: #C05E2F;
+			color: #075A94;
 		}
 
 		.menu-active .menu-trigger:after { 
@@ -421,7 +421,7 @@ transition: all 300ms;
 			display: inline-block;
 			width: 36px;
 			height: 36px;
-			color: #C05E2F;
+			color: #075A94;
 			background-color: #FFF;
 			font-family: "icomoon";
 			font-style: normal;
@@ -437,7 +437,7 @@ transition: all 300ms;
 		}
 
 		.menu-trigger:hover:after {
-			color: #7F2123;
+			color: #064571;
 		}
 
 body.menu-active div#content { right: 141px;}
@@ -456,7 +456,7 @@ padding: 0;
 }
 
 .searchbox .body {
-  color: #7F2123;
+  color: #064571;
   text-align: center;
   padding: 3px 0;
 }
@@ -495,7 +495,7 @@ margin-bottom: 0px!important;
 }
 
 .gsst_a .gscb_a {
-color: #7F2123!important;
+color: #064571!important;
 cursor: pointer;
 }
 
@@ -527,7 +527,7 @@ border-radius: 0!important;
 -moz-border-radius: 0!important;
 -webkit-border-radius: 0!important;
 border-color: none!important;
-background-color: #C05E2F!important;
+background-color: #075A94!important;
 background-image: none!important;
 filter: none!important;
 }
@@ -558,7 +558,7 @@ display: none;
 
 /*UPCOMING DATES*/
 .date {
-	background-color: #C05E2F;
+	background-color: #075A94;
   padding: 0.5em;
   color: #FFF;
   font-family: 'Lato', sans-serif;
@@ -571,7 +571,7 @@ display: none;
 }
 
 .past-text {
-	color: #C05E2F;
+	color: #075A94;
 }
 
 .events {
@@ -584,7 +584,7 @@ padding-bottom: 0;
 
 /* FOOTER */
 footer {
-  background-color: #7F2123;
+  background-color: #064571;
   color: #FFF;
   padding: 1em;
 }
@@ -605,7 +605,7 @@ footer a {
 }
 
 footer a:hover {
-	color: #C05E2F;
+	color: #075A94;
 	border-bottom: 1px solid;
 }
 
@@ -615,7 +615,7 @@ footer form {
 
 footer input[type="submit"], footer input[type="reset"] {
   background-color: #FFF;
-  color: #7F2123;
+  color: #064571;
 }
 
 footer input[type="submit"]:hover, footer input[type="reset"]:hover {
@@ -645,14 +645,14 @@ textarea {
 }
 
 .copyright a {
-	color: #7F2123;
+	color: #064571;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: all 0.8s ease;
 }
 
 .copyright a:hover {
-	color: #C05E2F;
+	color: #075A94;
 	border-bottom: 1px solid;
 }
 
@@ -679,7 +679,7 @@ textarea {
 /* ---------------- ---------------------- */
 /* ACCOMMODATION */
 .ls-select-box:hover {
-	background-color: #C05E2F;
+	background-color: #075A94;
 	color: #FFF;
 }
 
@@ -706,7 +706,7 @@ button, input, select, textarea {
 input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-  background-color: #7F2123;
+  background-color: #064571;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   color: #FFF;
@@ -721,7 +721,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 input[type="reset"]:hover, input[type="submit"]:hover {
-  background-color: #C05E2F;
+  background-color: #075A94;
 }
 
 .paypal table {
@@ -745,12 +745,12 @@ input[type="reset"]:hover, input[type="submit"]:hover {
 }
 
 .accommodation td {
-	border: 1px solid #7F2123;
+	border: 1px solid #064571;
 	padding: 0 1em;
 }
 
 .bottom-border {
-	border-bottom: 1px solid #C05E2F;
+	border-bottom: 1px solid #075A94;
 }
 
 /* Contact Us */
@@ -1032,6 +1032,10 @@ footer {
 	overflow: auto;
 }
 
+.bg-link {
+  color: #FFF;
+}
+
 	.bg-img {
 		position: absolute;
 	}
@@ -1072,7 +1076,7 @@ footer {
 
 	.cbp-af-inner nav .dot {
   		font-size: 1em;
-  		color: #C05E2F;
+  		color: #075A94;
   		padding: 0 0.4em;
 	}
 
@@ -1082,7 +1086,7 @@ footer {
 	}
 
 	.cbp-af-header nav a:hover {
-	background-color: #C05E2F;
+	background-color: #075A94;
 	padding: 1em 0.1em;
 	color: #FFF!important;
 	}
@@ -1104,7 +1108,7 @@ h1 {
 
 .subhead {
   padding: 0 1em 1.5em;
-  color: #C05E2F;
+  color: #075A94;
 }
 
 .main-content {
@@ -1134,7 +1138,7 @@ h2 {
   padding: 0.5em;
   background-color: transparent;
   color: #000;
-  border-right: 1px solid #7F2123;
+  border-right: 1px solid #064571;
     font-weight: 500;
 }
 

@@ -1,6 +1,6 @@
 <?php
 
-$my_email = "info@cdsr.net";
+$my_email = "info@iccste.com";
 
 /*
 
@@ -118,13 +118,13 @@ mail($my_email,$subject,$message,$headers);
 
 ---
 layout: default
-title: FFHMT'16 - Contact Us
+title: ICCSTE'16 - Contact Us
 ---
 
 <div class="unit unit-s-1 unit-m-1-4-1 unit-l-1-4-1">
   <div class="unit-spacer content">
     <p class="body">We have received your message and we will try our best to get back to you within the next 48 hours.<br>
-    Thank you for your interest in FFHMT'16.</p>
+    Thank you for your interest in ICCSTE'16.</p>
 
   </div>
   </div>

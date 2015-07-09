@@ -21,7 +21,7 @@
 .confirmInvalidState .confirmInvalidMsg
 {
 	display: inline;
-	color: #7F2123;
+	color: #064571;
 }
 
 /* The next three group selectors control the way the core element (INPUT) looks like when the widget is in one of the states: * focus, required , invalid , valid 
@@ -32,7 +32,7 @@
 
  /* When the widget is in the valid state the INPUT has a green background applied on it. */
 .confirmValidState input, input.confirmValidState {
-	background-color: #C05E2F;
+	background-color: #075A94;
 	  border: 0;
 }
 
@@ -40,7 +40,7 @@
 input.confirmRequiredState, .confirmRequiredState input, 
 input.confirmInvalidState, .confirmInvalidState input
 {
-	background-color: #C05E2F;
+	background-color: #075A94;
 	  border: 0;
 }
 

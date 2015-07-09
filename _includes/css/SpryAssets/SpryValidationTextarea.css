@@ -37,7 +37,7 @@
  
  /* When the widget is in the valid state the TEXTAREA has a green background applied on it. */
 .textareaValidState textarea, textarea.textareaValidState {
-	background-color: #EA573A;
+	background-color: #075A94;
 	border: 0;
 }
 
@@ -45,7 +45,7 @@
 textarea.textareaRequiredState, .textareaRequiredState textarea, 
 textarea.textareaMinCharsState, .textareaMinCharsState textarea, 
 textarea.textareaMaxCharsState, .textareaMaxCharsState textarea {
-	background-color:#C05E2F;
+	background-color:#075A94;
 	  border: 0;
 }
 
