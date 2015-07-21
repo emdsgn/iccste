@@ -202,6 +202,18 @@ th {
   float: right;
 }
 
+.left {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+}
+
+.right {
+  display: inline-block;
+  margin: 0;
+  float: right;
+}
+
 .top {
 	display: block;
 	text-align: right;
@@ -1144,12 +1156,22 @@ h2 {
 
 .imp-date {
   padding: 0.5em;
-  text-align: right;
 }
 
 .reg {
   padding: 0.5em;
-  text-align: right;
+}
+
+.left {
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.right {
+  display: inline-block;
+  margin: 0;
+  float: left;
 }
 
 footer form {
@@ -1201,6 +1223,12 @@ footer form {
 
 	.cbp-af-inner nav .dot {
   padding: 0 0.3em;
+}
+
+.right {
+  display: inline-block;
+  margin: 0;
+  float: right;
 }
 }
 
