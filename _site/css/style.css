@@ -1508,6 +1508,10 @@ right: 180px;
 	.mob-link {
   font-size: inherit;
 }
+.left {
+     margin-right: 2%;
+	 padding-bottom: 12px;
+}
 
 nav#slide-menu {
 right: -192px;
@@ -1941,6 +1945,35 @@ footer form {
 /* 1920 PX */
 @media only screen and (min-width: 119em) {
 }
+
+/*contact us*/
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+.right { width: 50%; }
+.left {
+     margin-right: 2%; 
+}
+.full { width: 100%; }
+@media (max-width: 600px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+
 .grid {
   letter-spacing: -0.31em;
   *letter-spacing: normal;
