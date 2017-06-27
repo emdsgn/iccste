@@ -14,23 +14,23 @@ if(!defined("PHP_EOL")){define("PHP_EOL", strtoupper(substr(PHP_OS,0,3) == "WIN"
 
 // Build message.
 function build_message($request_input){
-	if(!isset($message_output)){
-		$message_output ="";
-	}
-	if(!is_array($request_input)){
-		$message_output = $request_input;
-	}else{
-		foreach($request_input as $key => $value){
-			if(!empty($value)){
-				if(!is_numeric($key)){
-					$message_output .= str_replace("_"," ",ucfirst($key)).": ".build_message($value).PHP_EOL.PHP_EOL;
-				}else{
-					$message_output .= build_message($value).", ";
-				}
-			}
-		}
-	}
-	return rtrim($message_output,", ");
+  if(!isset($message_output)){
+    $message_output ="";
+  }
+  if(!is_array($request_input)){
+    $message_output = $request_input;
+  }else{
+    foreach($request_input as $key => $value){
+      if(!empty($value)){
+        if(!is_numeric($key)){
+          $message_output .= str_replace("_"," ",ucfirst($key)).": ".build_message($value).PHP_EOL.PHP_EOL;
+        }else{
+          $message_output .= build_message($value).", ";
+        }
+      }
+    }
+  }
+  return rtrim($message_output,", ");
 }
 
 // Defining the Variables
@@ -41,9 +41,9 @@ $message = build_message($_REQUEST);
 
 $message = 'Dear Colleague,
 
-Thank you for registering for ICCSTE 2016. If you have requested any official letters, please allow up to 5 business days to receive your documents.
+Thank you for registering for ICCSTE 2018. If you have requested any official letters, please allow up to 5 business days to receive your documents.
 
-If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@iccste.com. You can find the copyright form here: www.iccste.com/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
+If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@cdsr.net. You can find the copyright form here: www.iccste.com/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
 
 You can find your registration details below. If there are any errors in the information you have provided, please write an email to us at registration@iccste.com mentioning the correct information. Please note that you SHOULD NOT refill the form.
 
@@ -59,15 +59,15 @@ $message = $message . PHP_EOL.PHP_EOL."-- ".PHP_EOL."";
 
 $message = stripslashes($message);
 
-$subject = "Registration Details for " . $_REQUEST['Email'];
+$subject = "Registration Details for " . $_REQUEST['email'];
 
-$headers = "From: " . $_REQUEST['Email'];
+$headers = "From: " . $_REQUEST['email'];
 
-$your_email = $_REQUEST['Email'];
+$your_email = $_REQUEST['email'];
 
-$your_subject = "Your Registration Details for ICCSTE'16";
+$your_subject = "Your Registration Details for CDSR'18";
 
-$your_headers = "From: " . $my_email;
+$your_headers = "From: CDSR'18 <" . $my_email . ">";
 
 if ((($_FILES["file"]["type"] == "image/gif")
 
@@ -92,14 +92,14 @@ if ((($_FILES["file"]["type"] == "image/gif")
     {
       move_uploaded_file($_FILES["file"]["tmp_name"],"receipts/" . $_FILES["file"]["name"]);
       rename("receipts/".$_FILES['file']['name'],"receipts/".$date.'_'.$_FILES['file']['name']);
-	$filename = $date.'_'.$_FILES['file']['name'];
+  $filename = $date.'_'.$_FILES['file']['name'];
     }
   }
 else
   {
   die("The file you have selected for upload is invalid. <br />
-	Please make sure the file you are trying to upload is an image (.jpg, .jpeg, .png, .gif, .tif) <br />
-	No other file types are allowed.");
+  Please make sure the file you are trying to upload is an image (.jpg, .jpeg, .png, .gif, .tif) <br />
+  No other file types are allowed.");
   }
 
 mail($my_email,$subject,$message,$headers);
@@ -113,7 +113,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 <meta name="robots" content="noarchive">
 <meta name="description" content="">
 <meta name="keywords" content="">
-<title>ICCSTE'16 - Registration Form Filled!</title>
+<title>ICCSTE'18 - Registration Form Filled!</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
@@ -142,7 +142,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 <body>
 <nav id="slide-menu">
-  <h1>ICCSTE'16</h1>
+  <h1>ICCSTE'18</h1>
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="../papers">Paper Submissions</a></li>
@@ -184,8 +184,8 @@ mail($your_email,$your_subject,$message,$your_headers);
 	</div>
 </div>
         <div class="bg">
-          <h1>2<sup>nd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'16)</h1>
-          <p class="subhead">May 2016 | Ottawa, ON</p>
+          <h1>3<sup>rd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'18)</h1>
+          <p class="subhead">June 14 - 16, 2018 | Toronto, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -210,8 +210,8 @@ mail($your_email,$your_subject,$message,$your_headers);
         </div>
 
         <div class="bg">
-          <h1>2<sup>nd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'16)</h1>
-          <p class="subhead">May 2016 | Ottawa, ON</p>
+          <h1>3<sup>rd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'18)</h1>
+          <p class="subhead">June 14 - 16, 2018 | Toronto, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -235,19 +235,24 @@ mail($your_email,$your_subject,$message,$your_headers);
   <div class="unit unit-s-1 unit-m-1-3-1 unit-l-1-3-1">
     <div class="unit-spacer">
       <h2>Announcements</h2>
-      <div id="main-slider" class="liquid-slider">
+          <div id="main-slider" class="liquid-slider">
     <div>
       <h2 class="title">1</h2>
-      <p class="bold">ICCSTE 2016:</p>
-      <p class="body">ICCSTE 2016 will  be held in Ottawa, Canada on May 2016.</p>
+      <p class="bold">ICCSTE 2018:</p>
+      <p class="body">ICCSTE 2018 will  be held in Toronto, Canada on June 14 - 16, 2018.</p>
     </div>          
     <div>
       <h2 class="title">2</h2>
       <p class="bold">Best Paper Award:</p>
       <p class="body">Two best paper awards will be conferred to author(s) of the papers that receive the highest rank during the peer-review and by the respected session chairs. Please visit <a href="../papers" class="body-link">Paper Submission</a> for more information.</p>
     </div>
-
+    <div>
+      <h2 class="title">3</h2>
+      <p class="bold">Become a Sponsor or an Exhibitor</p>
+      <p class="body">ICCSTE attracts a wide range of researchers in the field of control, dynamic systems, and robotics. As a prominent company in the field of control, dynamic systems, and robotics, we would like to offer you an exhibit at ICCSTE. Please visit <a href="../sponsor" class="body-link">Sponsors</a> for more information.</p>
+    </div>
   </div>
+
     </div>
   </div>
 
@@ -261,70 +266,75 @@ mail($your_email,$your_subject,$message,$your_headers);
 
   	<p class="body">If there are any problems in the information you have filled out, please write an email to us at <a href="mailto:registration@iccste.com" class="body-link">registration@iccste.com</a> mentioning the mistakes made. Please note that you SHOULD NOT refill the form.</p>
 
-	<p class="body">We are looking forward to seeing you at ICCSTE'16!</p>
+	<p class="body">We are looking forward to seeing you at ICCSTE'18!</p>
   </div>
 </div>
 
   <div class="unit unit-s-1 unit-m-1-3-1 unit-l-1-3-1">
   <div class="unit-spacer">
-    <section class="main">
-				<div class="custom-calendar-wrap">
-					<div id="custom-inner" class="custom-inner">
-						<div class="custom-header clearfix">
-							<nav>
-								<span id="custom-prev" class="custom-prev"></span>
-								<span id="custom-next" class="custom-next"></span>
-							</nav>
-							<h2 id="custom-month" class="custom-month"></h2>
-							<h3 id="custom-year" class="custom-year"></h3>
-						</div>
-						<div id="calendar" class="fc-calendar-container"></div>
-					</div>
-				</div>
-			</section>
+
+<section class="main">
+
+  <ul class="side-bar-menu" style="padding:0px;">
+    <li><a href="../sponsor">Sponsors &amp; Exhibitors</a></li>
+    <li><a href="../symposium">Symposium &amp; Workshop</a></li>
+  </ul>
+
+</section>
+
+<br><br>
+
     <h2>Upcoming Dates</h2>
 
-<div class="grid events">
+<!-- <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
-	<div class="date">
-		Jan. 1, 2016
-	</div>
+  <div class="date">
+    <div class="past">May. 26, 2018</div>
+    Jul. 14, 2018
+  </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
-	<div class="unit-spacer">
-		Paper Submission Deadline
-	</div>
-</div>
-</div>
-
-<div class="grid events">
-<div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
-	<div class="date">
-		Feb. 10, 2016
-	</div>
-</div>
-
-<div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
-	<div class="unit-spacer">
-		Notification of Authors
-	</div>
+  <div class="unit-spacer">
+    <div class="past past-text">Final Version of Accepted Submissions Deadline</div>
+    Final Version of Accepted Submissions Deadline
+  </div>
 </div>
 </div>
 
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
-	<div class="date">
-		Feb. 20, 2016
-	</div>
+  <div class="date">
+    <div class="past">Jun. 23, 2018</div>
+    Jul. 14, 2018
+  </div>
 </div>
 
 <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
-	<div class="unit-spacer">
-		Camera Ready Submission Deadline
-	</div>
+  <div class="unit-spacer">
+     <div class="past past-text">Registration Deadline for Authors</div>
+     Final Registration Deadline for Authors
+  </div>
+</div>
+</div> -->
+
+<div class="grid events">
+<div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
+  <div class="date">
+    <!-- <div class="past">May 15, 2018</div> -->
+    Jun. 14 - 16, 2018
+  </div>
+</div>
+
+<div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
+  <div class="unit-spacer">
+    <!-- <div class="past past-text">Extended Notification of Authors</div> -->
+    Conference Dates
+  </div>
 </div>
 </div>
+
+
   </div>
   </div>
 </div>
@@ -345,55 +355,23 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 	<div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 contact">
 	<div class="unit-spacer">
-	<p class="body">For questions or comments regarding ICCSTE'16, please fill out the form below:</p>
+	<p class="body">For questions or comments regarding ICCSTE'18, please fill out the form below:</p>
 
-    <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm">
-  
-  <table border="0" class="contact">
-    <tbody>
-      <tr>
-        <td class="label">Name:</td>
-        <td class="text"><span id="sprytextfield1">
-              <input name="Name" type="text" id="Name" size="40" autocomplete="off">
+    <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm" class="cf">
+  <div class="half left cf">
+    <input style="margin-bottom:0.85em" type="text" name="Name" id="Name" placeholder="Name" required>
+    <input style="margin-bottom:0.85em" type="email" name="Email" id="Email" placeholder="Email address" required>
+    <input type="text" name="Subject" id="Subject" placeholder="Subject" required>
+  </div>
+  <div class="half right cf">
+    <textarea name="Message" type="text" rows="5" name="Message" id="Message" placeholder="Message" required></textarea>
+  </div><br><br>
+  <center class="full right cf"><div class="g-recaptcha" data-sitekey="6LdjTv8SAAAAAKl9MtB8d5aiLp7jkmM0byTc89j0"></div></center>
+  <div class="cf">
+  <center><div class="full right cf"><input type="submit" name="Submit" value="Submit">
+    <input type="reset" name="Reset" value="Reset"></center></div>
+</div></div></form>
 
-              <span class="textfieldRequiredMsg">A value is required.</span></span></td>
-        </tr>
-
-        <tr>
-            <td class="label">Email:</td>
-            <td class="text"><span id="sprytextfield2">
-            <input name="Email" type="text" id="Email" size="40" autocomplete="off">
-            <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
-          </tr>
-
-          <tr>
-            <td class="label">Confirm Email:</td>
-             <td class="text"><span id="spryconfirm4">
-              <input name="Confirm Email" type="text" id="Confirm Email" size="40" autocomplete="off">
-              <span class="confirmRequiredMsg">A value is required.</span><span class="confirmInvalidMsg">Emails don't match.</span></span></td>
-          </tr>
-
-          <tr>
-            <td class="label">Subject:</td>
-            <td class="text"><span id="sprytextfield3">
-              <input name="Subject" type="text" id="Subject" size="40" autocomplete="off">
-              <span class="textfieldRequiredMsg">A value is required.</span></span></td>
-          </tr>
-
-          <tr>
-            <td valign="top" class="label">Message:</td>
-            <td class="text"><span id="sprytextarea1">
-              <textarea name="Message" id="Message" cols="31" rows="10" autocomplete="off"></textarea>
-              <span class="textareaRequiredMsg">A value is required.</span></span>
-              <center>
-        <input type="submit" name="Submit" value="Submit" accept="image/jpeg">
-        <input type="reset" name="Reset" value="Reset"></center></td>
-          </tr>
-
-        </tbody></table><br>
-
-        
-</form>
     </div>
 	</div>
 	</div>
