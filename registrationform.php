@@ -185,7 +185,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 </div>
         <div class="bg">
           <h1>3<sup>rd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'18)</h1>
-          <p class="subhead">June 10 - 12, 2018 | Toronto, Canada</p>
+          <p class="subhead">June 10 - 12, 2018 | Niagara Falls, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -211,7 +211,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
         <div class="bg">
           <h1>3<sup>rd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'18)</h1>
-          <p class="subhead">June 10 - 12, 2018 | Toronto, Canada</p>
+          <p class="subhead">June 10 - 12, 2018 | Niagara Falls, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
 
@@ -239,7 +239,7 @@ mail($your_email,$your_subject,$message,$your_headers);
     <div>
       <h2 class="title">1</h2>
       <p class="bold">ICCSTE 2018:</p>
-      <p class="body">ICCSTE 2018 will  be held in Toronto, Canada on June 10 - 12, 2018.</p>
+      <p class="body">ICCSTE 2018 will  be held in Niagara Falls, Canada on June 10 - 12, 2018.</p>
     </div>          
     <div>
       <h2 class="title">2</h2>
@@ -345,10 +345,10 @@ mail($your_email,$your_subject,$message,$your_headers);
 	<div class="unit-spacer">
 		<h2>Contact Us</h2>
 		<p class="body">International ASET Inc.<br>
-		Unit No. 417, 1376 Bank St.<br>
-		Ottawa, Ontario, Canada<br>
-		Postal Code: K1H 7Y3<br>
-		+1-613-695-3040<br>
+		Unit No. 104, 2442 St. Joseph Blvd.<br>
+    Orl&eacute;ans, Ontario, Canada<br>
+    Postal Code: K1C 1G1<br>
+    +1-613-834-9999<br>
 		<a href="mailto:info@cdsr.net">info@cdsr.net</a></p>
 		</div>
 	</div>
@@ -379,7 +379,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 <div class="copyright">
 	<a href="international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
-	<p class="body">&copy; Copyright International ASET Inc., 2015. All rights reserved.</p>
+	<p class="body">© Copyright <script>document.write(new Date().getFullYear())</script>, International ASET Inc. – All Rights Reserved.</p>
 	<p class="copyright1">Have any feedback? Please provide them here: <script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'" class="body-link">Feedback</a>');</script></p>
 </div>
 </div>
