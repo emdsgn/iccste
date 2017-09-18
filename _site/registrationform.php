@@ -1,5 +1,5 @@
 <?php
-$my_email = "ICCSTE Registration registration@iccste.com";
+$my_email = "registration@iccste.com";
 $errors = array();
 
 // Remove $_COOKIE elements from $_REQUEST.
@@ -43,7 +43,7 @@ $message = 'Dear Colleague,
 
 Thank you for registering for ICCSTE 2018. If you have requested any official letters, please allow up to 5 business days to receive your documents.
 
-If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@cdsr.net. You can find the copyright form here: www.iccste.com/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
+If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@iccste.com. You can find the copyright form here: www.iccste.com/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
 
 You can find your registration details below. If there are any errors in the information you have provided, please write an email to us at registration@iccste.com mentioning the correct information. Please note that you SHOULD NOT refill the form.
 
@@ -65,9 +65,9 @@ $headers = "From: " . $_REQUEST['email'];
 
 $your_email = $_REQUEST['email'];
 
-$your_subject = "Your Registration Details for CDSR'18";
+$your_subject = "Your Registration Details for ICCSTE'18";
 
-$your_headers = "From: CDSR'18 <" . $my_email . ">";
+$your_headers = "From: ICCSTE'18 <" . $my_email . ">";
 
 if ((($_FILES["file"]["type"] == "image/gif")
 
@@ -112,7 +112,7 @@ mail($your_email,$your_subject,$message,$your_headers);
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="noarchive">
 <meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="keywords" content="environment conference, biofuels conference, desalination conference, wastewater conference, pollution conference, remediation conference, environmental engineering conference, environmental pollution conference, environmental remediation conference, environmental treatment conference, air pollution conference, water pollution conference, wasterwater pollution conference, soil pollution conference, environmental protection, environmental sustainability, environmental development, greenhouse, global warming, climate change, groudwater, oil spills, renewable energy, water treatment, soil treatment, wastewater treatment, environment, biofuels, desalination, wastewater, pollution, remediation, environmental engineering, environmental pollution, environmental remediation, environmental treatment, air pollution, water pollution, wasterwater pollution, soil pollution, environmental protection conference, environmental sustainability conference, environmental development conference, greenhouse conference, global warming conference, climate change conference, groudwater conference, oil spills conference, renewable energy conference, water treatment conference, soil treatment conference, wastewater treatment conference">
 <title>ICCSTE'18 - Registration Form Filled!</title>
 
 <meta name="handheldfriendly" content="true">
@@ -124,11 +124,11 @@ mail($your_email,$your_subject,$message,$your_headers);
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 <!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="../js/modernizr.custom.63321.js"></script>
 <script>
   (function() {
-    var cx = '016656741306535874023:y7as1mei7la';
+    var cx = '016656741306535874023:oio_ha3_zco';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -154,7 +154,7 @@ mail($your_email,$your_subject,$message,$your_headers);
     <li><a href="../sponsor">Sponsors</a></li>
     <li><a href="../venue">Venue</a></li>
     <li><a href="../accommodation">Accommodation</a></li>
-    <li><a href="../symposium">Symposium</a></li>
+    <li><a href="../symposium">Symposiums</a></li>
     <li><a href="#contact">Contact Us</a></li>
   </ul>
 </nav>
@@ -162,29 +162,29 @@ mail($your_email,$your_subject,$message,$your_headers);
 <div id="content">
   <div class="desktop">
   <div class="cbp-af-header">
-	<div class="cbp-af-inner">
-		<a href="/"><img src="../img/logo.png" class="flex-logo"></a>
-			<nav>
-				<a href="/">Home</a><p class="dot">&middot;</p><a href="../papers">Paper Submission</a><p class="dot">&middot;</p><a href="../program">Program</a><p class="dot">&middot;</p><a href="../dates">Important Dates</a><p class="dot">&middot;</p><a href="../registration">Registration</a><p class="dot">&middot;</p><a href="../committee">Committee</a><p class="dot">&middot;</p><a href="../keynote">Keynotes</a><p class="dot">&middot;</p><a href="../sponsor">Sponsors</a><p class="dot">&middot;</p><a href="../venue">Venue</a><p class="dot">&middot;</p><a href="../accommodation">Accommodation</a><p class="dot">&middot;</p><a href="../symposium">Symposium</a><p class="dot">&middot;</p><a href="#contact">Contact Us</a>
-		</nav>
-	</div>
+  <div class="cbp-af-inner">
+    <a href="/"><img src="../img/logo.png" class="flex-logo"></a>
+      <nav>
+        <a href="/">Home</a><p class="dot">&middot;</p><a href="../papers">Paper Submission</a><p class="dot">&middot;</p><a href="../program">Program</a><p class="dot">&middot;</p><a href="../dates">Important Dates</a><p class="dot">&middot;</p><a href="../registration">Registration</a><p class="dot">&middot;</p><a href="../committee">Committee</a><p class="dot">&middot;</p><a href="../keynote">Keynotes</a><p class="dot">&middot;</p><a href="../sponsor">Sponsors</a><p class="dot">&middot;</p><a href="../venue">Venue</a><p class="dot">&middot;</p><a href="../accommodation">Accommodation</a><p class="dot">&middot;</p><a href="../symposium">Symposiums</a><p class="dot">&middot;</p><a href="#contact">Contact Us</a>
+    </nav>
+  </div>
 </div>
 </div>
 
   <header>
     <div class="mobile">
       <div class="cbp-af-header">
-	<div class="cbp-af-inner">
-		<div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-      		<a href="/"><img src="../img/logo.png" class="flex-logo"></a>
-   	 	</div>
-    	<div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
-      		<div class="menu-trigger"></div>
-  		</div>
-	</div>
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="/"><img src="../img/logo.png" class="flex-logo"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"></div>
+      </div>
+  </div>
 </div>
         <div class="bg">
-          <h1>3<sup>rd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'18)</h1>
+          <h1>2<sup>nd</sup> International Conference on Recent Trends in<br>Environmental Science and Engineering (ICCSTE'18)</h1>
           <p class="subhead">June 10 - 12, 2018 | Niagara Falls, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
@@ -198,7 +198,9 @@ mail($your_email,$your_subject,$message,$your_headers);
         <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
   </div>
 </div>
-</div>
+</div><!-- <br>
+      <p class="body" style="text-align: center!important;">For more information about the ICCSTE'18 Conference, please view the <b><a href="../ICCSTE18_CFP.pdf" class="body-link">conference flyer</a></b>.</p> -->
+      <br><br>
         </div>
     </div>
 
@@ -210,7 +212,7 @@ mail($your_email,$your_subject,$message,$your_headers);
         </div>
 
         <div class="bg">
-          <h1>3<sup>rd</sup> International Conference on Civil, Structural and Transportation Engineering (ICCSTE'18)</h1>
+          <h1>2<sup>nd</sup> International Conference on Recent Trends in<br>Environmental Science and Engineering (ICCSTE'18)</h1>
           <p class="subhead">June 10 - 12, 2018 | Niagara Falls, Canada</p>
 
           <a href="../papers" class="bg-link">Paper Submission</a> <p class="dot">&middot;</p> <a href="../dates" class="bg-link">Important Dates</a> <p class="dot">&middot;</p> <a href="../registration" class="bg-link">Registration</a>
@@ -224,7 +226,10 @@ mail($your_email,$your_subject,$message,$your_headers);
         <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
   </div>
 </div>
-</div>
+</div><br><br>
+
+      <!-- <p class="body" style="text-align: center!important; color: #FFF!important;">For more information about the ICCSTE'18 Conference, please view the <b><a href="../ICCSTE18_CFP.pdf" class="body-link">conference flyer</a></b>.</p> -->
+
         </div>
         </div> 
       </div>
@@ -235,11 +240,25 @@ mail($your_email,$your_subject,$message,$your_headers);
   <div class="unit unit-s-1 unit-m-1-3-1 unit-l-1-3-1">
     <div class="unit-spacer">
       <h2>Announcements</h2>
-          <div id="main-slider" class="liquid-slider">
+      <div id="main-slider" class="liquid-slider">
     <div>
       <h2 class="title">1</h2>
       <p class="bold">ICCSTE 2018:</p>
       <p class="body">ICCSTE 2018 will  be held in Niagara Falls, Canada on June 10 - 12, 2018.</p>
+      
+    <!--   <p class="bold">ICCSTE'18 Workshop</p>
+      <p class="body">As per popular request, the organizing committee has decided to extend the ICCSTE'18 conference to three days (now June 10 - 12, 2018). The new high-level schedule is as follows:</p>
+
+      <ul>
+        <li>Day 1: Registration</li>
+        <li>Day 2: Main Track Conference Sessions and Workshop</li>
+        <li>Day 3: Main Track Conference Sessions and Gala dinner or Cruise tour</li>
+      </ul>
+      
+      <p class="body">Registration for the workshop will be 113 CAD (HST included). Workshop attendees will receive a certificate of participation. For registration, please visit: <a href="../registration" class="body-link">here</a>.</p>
+
+      <p class="body">More information to follow; we greatly appreciate your patience!</p> -->
+
     </div>          
     <div>
       <h2 class="title">2</h2>
@@ -249,7 +268,7 @@ mail($your_email,$your_subject,$message,$your_headers);
     <div>
       <h2 class="title">3</h2>
       <p class="bold">Become a Sponsor or an Exhibitor</p>
-      <p class="body">ICCSTE attracts a wide range of researchers in the field of control, dynamic systems, and robotics. As a prominent company in the field of control, dynamic systems, and robotics, we would like to offer you an exhibit at ICCSTE. Please visit <a href="../sponsor" class="body-link">Sponsors</a> for more information.</p>
+      <p class="body">ICCSTE attracts a wide range of researchers in the field of recent trends in environmental science and engineering. As a prominent company in the field of recent trends in environmental science and engineering, we would like to offer you an exhibit at ICCSTE. Please visit <a href="../sponsor" class="body-link">Sponsors</a> for more information.</p>
     </div>
   </div>
 
@@ -262,11 +281,11 @@ mail($your_email,$your_subject,$message,$your_headers);
 
     <p class="body">If you do not receive an email, <strong>please check your SPAM folder</strong>.</p>
 
- 	<p class="body">If you have requested any official invitation letters, please allow up to 5 business days to receive your documents.</p> 
+  <p class="body">If you have requested any official invitation letters, please allow up to 5 business days to receive your documents.</p> 
 
-  	<p class="body">If there are any problems in the information you have filled out, please write an email to us at <a href="mailto:registration@iccste.com" class="body-link">registration@iccste.com</a> mentioning the mistakes made. Please note that you SHOULD NOT refill the form.</p>
+    <p class="body">If there are any problems in the information you have filled out, please write an email to us at <a href="mailto:registration@iccste.com" class="body-link">registration@iccste.com</a> mentioning the mistakes made. Please note that you SHOULD NOT refill the form.</p>
 
-	<p class="body">We are looking forward to seeing you at ICCSTE'18!</p>
+  <p class="body">We are looking forward to seeing you at ICCSTE'18!</p>
   </div>
 </div>
 
@@ -284,7 +303,8 @@ mail($your_email,$your_subject,$message,$your_headers);
 
 <br><br>
 
-    <h2>Upcoming Dates</h2>
+
+   <h2>Upcoming Dates</h2>
 
 <div class="grid events">
 <div class="unit unit-s-1 unit-m-1-4 unit-l-1-4">
@@ -335,29 +355,30 @@ mail($your_email,$your_subject,$message,$your_headers);
 </div>
 
 
+
   </div>
   </div>
 </div>
 
 <footer id="contact">
-	<div class="grid">
-	<div class="unit unit-s-1 unit-m-1-3 unit-l-1-3">
-	<div class="unit-spacer">
-		<h2>Contact Us</h2>
-		<p class="body">International ASET Inc.<br>
-		Unit No. 104, 2442 St. Joseph Blvd.<br>
+  <div class="grid">
+  <div class="unit unit-s-1 unit-m-1-3 unit-l-1-3">
+  <div class="unit-spacer">
+    <h2>Contact Us</h2>
+    <p class="body">International ASET Inc.<br>
+    Unit No. 104, 2442 St. Joseph Blvd.<br>
     Orl&eacute;ans, Ontario, Canada<br>
     Postal Code: K1C 1G1<br>
     +1-613-834-9999<br>
-		<a href="mailto:info@cdsr.net">info@cdsr.net</a></p>
-		</div>
-	</div>
+    <a href="mailto:info@iccste.com">info@iccste.com</a></p>
+    </div>
+  </div>
 
-	<div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 contact">
-	<div class="unit-spacer">
-	<p class="body">For questions or comments regarding ICCSTE'18, please fill out the form below:</p>
+  <div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 contact">
+  <div class="unit-spacer">
+  <p class="body">For questions or comments regarding ICCSTE'18, please fill out the form below:</p>
 
-    <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm" class="cf">
+   <form action="../contactus.php" method="post" enctype="multipart/form-data" name="ContactForm" class="cf">
   <div class="half left cf">
     <input style="margin-bottom:0.85em" type="text" name="Name" id="Name" placeholder="Name" required>
     <input style="margin-bottom:0.85em" type="email" name="Email" id="Email" placeholder="Email address" required>
@@ -373,14 +394,14 @@ mail($your_email,$your_subject,$message,$your_headers);
 </div></div></form>
 
     </div>
-	</div>
-	</div>
+  </div>
+  </div>
 </footer> 
 
 <div class="copyright">
-	<a href="international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
-	<p class="body">© Copyright <script>document.write(new Date().getFullYear())</script>, International ASET Inc. – All Rights Reserved.</p>
-	<p class="copyright1">Have any feedback? Please provide them here: <script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'" class="body-link">Feedback</a>');</script></p>
+  <a href="http://international-aset.com">International ASET Inc.</a> | <a href="http://international-aset.com/phplistpublic/?p=subscribe&id=1">Subscribe</a> | <a href="../terms">Terms of Use</a> | <a href="../sitemap">Sitemap</a>
+  <p class="body">© Copyright <script>document.write(new Date().getFullYear())</script>, International ASET Inc. – All Rights Reserved.</p>
+  <p class="copyright1">Have any feedback? Please provide them here: <script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'" class="body-link">Feedback</a>');</script></p>
 </div>
 </div>
 
