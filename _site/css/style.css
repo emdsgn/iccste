@@ -1406,7 +1406,9 @@ display: none;
 }
 
 .past-text {
-	color: #50463C;
+	color: #999;
+	text-decoration: line-through;
+	font-weight: normal;
 }
 
 .events {
