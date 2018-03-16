@@ -43,7 +43,9 @@ $message = 'Dear Colleague,
 
 Thank you for registering for ICCSTE 2018. If you have requested any official letters, please allow up to 5 business days to receive your documents.
 
-If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@iccste.com. You can find the copyright form here: www.iccste.com/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
+If you are an author, please make sure to send us your camera ready version and a signed copyright form via email to info@iccste.com. You can find the copyright form here: https://iccste.com/papers. Please note that failing to do so may result in an unsuccessful process of your registration.
+
+To reserve a room at a discounted price, please make your reservation by using this link: http://aset.americananiagara.com
 
 You can find your registration details below. If there are any errors in the information you have provided, please write an email to us at registration@iccste.com mentioning the correct information. Please note that you SHOULD NOT refill the form.
 
