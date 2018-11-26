@@ -125,7 +125,6 @@ mail($your_email,$your_subject,$message,$your_headers);
 <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,400i,700" rel="stylesheet"><link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 <!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="../js/modernizr.custom.63321.js"></script>
 <script>
   (function() {
